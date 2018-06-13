@@ -1,3 +1,4 @@
+;; Keys in visualize mode
 (spacemacs/set-leader-keys-for-major-mode 'org-brain-visualize-mode "p" 'org-brain-add-parent)
 (spacemacs/set-leader-keys-for-major-mode 'org-brain-visualize-mode "P" 'org-brain-remove-parent)
 (spacemacs/set-leader-keys-for-major-mode 'org-brain-visualize-mode "c" 'org-brain-add-child)
@@ -27,3 +28,6 @@
 (spacemacs/set-leader-keys-for-major-mode 'org-brain-visualize-mode "-" 'org-brain-visualize-remove-grandchild)
 (spacemacs/set-leader-keys-for-major-mode 'org-brain-visualize-mode "z" 'org-brain-visualize-add-grandparent)
 (spacemacs/set-leader-keys-for-major-mode 'org-brain-visualize-mode "Z" 'org-brain-visualize-remove-grandparent)
+
+;; Global key binding
+(global-set-key (kbd "C-;") 'org-brain-visualize)
