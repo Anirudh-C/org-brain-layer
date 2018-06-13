@@ -6,7 +6,6 @@
   (use-package org-brain
     :ensure t
     :init
-    (with-eval-after-load 'evil
-      (evil-set-initial-state 'org-brain-visualize-mode 'emacs))
+    (setq org-brain-path "~/brain")
     )
 )
